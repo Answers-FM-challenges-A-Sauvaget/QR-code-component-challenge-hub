@@ -1,0 +1,70 @@
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-lightgray: hsl(212, 45%, 89%);
+  --color-grayishblue: hsl(220, 15%, 55%);
+  --color-darkblue: hsl(218, 44%, 22%);
+  --color-blue: hsl(228, 45%, 44%);
+
+  --fs-small: 0.938rem;
+
+  --fm-outfit: 'Outfit', sans-serif;;
+}
+
+/* STYLE FRONTEND MENTOR */
+.attribution {
+  font-size: 0.688rem;
+  text-align: center;
+  position: fixed;
+  bottom:  0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.attribution a {
+  color: var(--color-blue);
+}
+
+/* GENERIC RULES */
+
+body {
+  font-family:  var(--fm-outfit);
+  background-color: var(--color-lightgray);
+}
+
+/* ARTICLE */
+
+.article {
+  background-color: var(--color-white);
+  max-width: 360px;
+  text-align: center;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(50%);
+}
+
+.article__image {
+  border-radius: 1rem;
+  max-width: 320px;
+  margin: 20px;
+  height: auto;
+}
+
+.article__content {
+  max-width:  300px;
+  margin:  0 auto;
+}
+
+.article__title {
+  font-weight: bolder;
+  padding: 1rem 0;
+  color: var(--color-darkblue);
+}
+
+.article__texte {
+  font-size: var(--fs-small);
+  color: var(--color-grayishblue);
+}
